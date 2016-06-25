@@ -1,0 +1,50 @@
+// Place all the styles related to the snippets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "rouge";
+
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  background-image: url("bg.png");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #002B36;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #00CCCC;
+}
+
+div.class {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.block {
+  white-space: pre-wrap;
+  box-shadow: 5px 5px 3px #888888;
+  border-radius: 5px;
+  width: 80%;
+  padding: 20px;
+  border-left: 20%;
+}

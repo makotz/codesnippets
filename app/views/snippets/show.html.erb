@@ -1,0 +1,7 @@
+<h2><%= @snippet.title %></h2>
+<h3>Code: (<%= @snippet.code_type %>)</h3>
+<div class="code">
+  <pre class="highlight solarized-dark block">
+    <%= render("code_sample", language: @kind) %>
+  </pre>
+</div>
