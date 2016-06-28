@@ -20,7 +20,7 @@ class SnippetsController < ApplicationController
   def show
     @snippet = Snippet.find params[:id]
     @highlightme = @snippet.work
-    @kind = @snippet.code_type.to_s
+    @kind = @snippet.code_type.to_sym
   end
 
   def index
