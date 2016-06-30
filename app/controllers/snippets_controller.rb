@@ -28,6 +28,7 @@ class SnippetsController < ApplicationController
     @JSsnippets = Snippet.where(code_type: "javascript")
     @CSSsnippets = Snippet.where(code_type: "css")
     @HTMLsnippets = Snippet.where(code_type: "html")
+    @MarkDownsnippets = Snippet.where(code_type: "markdown")
   end
 
   def code_type
@@ -43,7 +44,7 @@ class SnippetsController < ApplicationController
   end
 
   def code_types
-    @code_types = ["ruby", "javascript", "html", "css"]
+    @code_types = ["ruby", "javascript", "html", "css", "markdown"]
   end
 
 end
